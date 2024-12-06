@@ -1,0 +1,101 @@
+.form-container {
+    border: 2px solid gray; 
+    border-radius: 15px; 
+    position: relative;
+    padding: 40px 20px 20px; 
+    background: #E0FFFF; 
+    max-width: 400px; 
+    margin: auto;
+    margin-top: 20vh;
+}
+
+.user-not-found, .otp-expired, .incorrect-secret, .unknown-user, .session-expired {
+    border: 1px solid #FFCCCC;
+    padding: 40px 20px 20px; 
+    position: relative;
+    border-radius: 5px; 
+    background: #FFCCCC; 
+    max-width: 400px; 
+    margin: auto;
+    margin-top: 5vh;
+}
+
+.user-found {
+    border: 1px solid #CCCCFF;
+    padding: 40px 20px 20px; 
+    position: relative;
+    border-radius: 5px; 
+    background: #CCCCFF; 
+    max-width: 400px; 
+    margin: auto;
+    margin-top: 5vh;
+}
+
+
+.form-heading {
+    background: inherit;
+    position: absolute;
+    top: -25px;
+    left: 20px; 
+}
+
+input[type="email"] {
+    width: 300px;
+}
+button[type="submit"] {
+    width: 100px;
+}
+
+.form-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+    padding: 15px;
+}
+
+#my-invalid {
+    color: red;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    font-size: larger;
+}
+
+.my-courses {
+    margin-left: 30px;
+}
+
+.my-courses > * {
+    margin-top: 25px;
+}
+
+
+.course-container { 
+    border-radius: 15px; 
+    position: relative;
+    padding: 40px 20px 20px; 
+    max-width: 400px; 
+    margin: auto;
+    margin-top: 20vh;
+}
+table {
+    border-collapse: collapse; 
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px; 
+    text-align: center; 
+}
+
+th {
+    background-color: #f2f2f2; 
+    font-weight: bold;
+}

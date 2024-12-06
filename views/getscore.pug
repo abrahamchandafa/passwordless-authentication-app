@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Course Information</title>
+</head>
+<body>
+    <div id="root">
+        <h1>Course Information</h1>
+        <h2>#{course} - Gradebook</h2>
+        <div class="course-container">
+            <table>
+                <tr>
+                    <th>Item</th>
+                    <th>Score</th>
+                </tr>               
+                each val in assn
+                    <tr>
+                        each i in val
+                            <td>#{i}</td>
+                    </tr>
+                <tr>
+                    <td></td>
+                    <td><b>Total</b> #{total}</td>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+</body>
+</html>

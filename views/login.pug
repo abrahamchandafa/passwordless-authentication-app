@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <script src="/js/statics.js" defer></script>
+    <title>Login Page</title>
+</head>
+<body>
+    <div id="root">
+        <h1>Gradebook Accessing Page</h1>
+        <div class="form-container">
+            <h3 class="form-heading">My Gradebooks</h3>
+            <form id="my-form">
+                <div class="form-wrap">
+                    <label for="my-email">Email: </label>
+                    <input type="email" id="my-email" name="email">
+                </div>
+                
+                <p id="my-invalid">*Must be an email address with @cs.hku.hk or @connect.hku.hk</p>
+                <div class="form-wrap">
+                    <button type="submit" id="my-submit">Login</button>
+                </div>
+            </form>
+        </div>
+        <div id="my-response">
+            if action == "otpExpired"
+                include otpExpired.pug    
+            else if action == "incorrectSecret"
+                include incorrectSecret.pug  
+            else if action == "unknownUser"
+                include unknownUser.pug
+            else if action == "sessionExpired"
+                include sessionExpired.pug
+        </div>
+    </div>
+</body>
+</html>
